@@ -1,0 +1,44 @@
+/* Definir paleta */
+:root {    
+    --dark-blue: #003354;
+    --light-blue: #91BED4;
+    --white-blue: #D9E8F5;
+    --gray: #A1A1AA;
+    --off-white: #FFFFE4;
+    --white: #F2F2F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 16px 51px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > ul {
+    list-style: none;
+    display: flex;
+    gap: 88px;
+}
+
+a, a:link {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--off-white);
+}
+
+main {
+    background-color: var(--light-blue);
+}
+
