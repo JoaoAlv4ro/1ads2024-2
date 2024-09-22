@@ -4,16 +4,18 @@
     --light-blue: #91BED4;
     --white-blue: #D9E8F5;
     --gray: #A1A1AA;
-    --off-white: #FFFFE4;
+    --off-white: #EBE9EA;
     --white: #F2F2F2;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
+
+/* HEADER */
 header {
     background-color: var(--dark-blue);
     color: var(--white);
@@ -26,19 +28,111 @@ header {
 header > ul {
     list-style: none;
     display: flex;
-    gap: 88px;
+    gap: 78px;
 }
 
-a, a:link {
+li > a, a:link {
     color: var(--gray);
     text-decoration: none;
 }
 
-a:hover {
+li > a:hover {
     color: var(--off-white);
 }
 
-main {
-    background-color: var(--light-blue);
+/* HERO */
+.hero-image {
+    width: 100%;
+    min-height: 420px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('/assets/images/vasily-koloda-8CqDvPuo_kI-unsplash.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+}
+
+.hero-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.hero-text h1 {
+    font-size: 32px;
+}
+
+.hero-text p {
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--gray);
+}
+
+/* MAIN CONTENT */
+.main-container {
+    margin: 0 auto;
+    max-width: 1240px;
+    align-items: center;
+}
+
+.main-container h1 {
+    align-items: center;
+    text-align: center;
+    margin: 30px 40px 40px 40px;
+}
+
+/* CARDS */
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: space-between;
+}
+
+.cards {
+    width: 287px;
+    height: 380px;
+    background: var(--white);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.cards img {
+    width: 100%;
+    height: 45%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cards-body {
+    padding: 18px 20px 20px 20px;
+}
+
+.cards-body h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.cards-body p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #141414;
+}
+
+.cards-body button {
+    width: 100%;
+    padding: 6px 12px;
+    background-color: var(--dark-blue);
+    text-align: center;
+    border: 1px #007bff;
+    border-radius: 4px;
+}
+
+.cards-body button > a {
+    font-size: 16px;
+    color: var(--white);
+    padding: 0px;
 }
 
