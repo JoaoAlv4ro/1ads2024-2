@@ -31,12 +31,12 @@ header > ul {
     gap: 78px;
 }
 
-li > a, a:link {
+header li > a, a:link {
     color: var(--gray);
     text-decoration: none;
 }
 
-li > a:hover {
+header li > a:hover {
     color: var(--off-white);
 }
 
@@ -88,8 +88,9 @@ li > a:hover {
 /* CARDS */
 .main-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-columns: repeat(3, 287px);
     justify-content: space-between;
+    padding: 0px 80px;
 }
 
 .cards {
@@ -136,3 +137,29 @@ li > a:hover {
     padding: 0px;
 }
 
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-blue);
+    padding: 16px 51px;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+}
+
+footer ul > li {
+    color: black;
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
