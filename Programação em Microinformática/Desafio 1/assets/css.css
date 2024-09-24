@@ -44,7 +44,7 @@ header li > a:hover {
 .hero-image {
     width: 100%;
     min-height: 420px;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('images/vasily-koloda-8CqDvPuo_kI-unsplash.png');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(images/vasily-koloda-8CqDvPuo_kI-unsplash.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
