@@ -134,6 +134,7 @@ header li > a:hover {
     text-align: center;
     border: 1px #007bff;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .cards-body button > a {
@@ -204,6 +205,7 @@ header li > a:hover {
     border: 1px #007bff;
     border-radius: 4px;
     color: var(--white);
+    cursor: pointer;
 }
 
 /* FOOTER */
