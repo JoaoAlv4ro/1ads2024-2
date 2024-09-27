@@ -81,6 +81,7 @@ header li > a:hover {
     margin: 0 auto;
     max-width: 1240px;
     align-items: center;
+    margin-bottom:80px;
 }
 
 .main-container h1 {
