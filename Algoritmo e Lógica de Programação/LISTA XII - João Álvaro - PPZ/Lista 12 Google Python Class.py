@@ -1,6 +1,8 @@
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 # http://www.apache.org/licenses/LICENSE-2.0
+from itertools import count
+
 
 # Google's Python Class
 # http://code.google.com/edu/languages/google-python-class/
@@ -38,30 +40,45 @@ def not_bad(s):
 # Dadas 2 strings, a e b, retorna a string
 # a_inicio + b_inicio + a_final + b_final
 def inicio_final(a, b):
-  a_inicio = len(a) // 2
-  b_inicio = len(b) // 2
-  if len(a) % 2 == 1:
-    a-
-  return
+  a_meio = len(a) // 2
+  b_meio = len(b) // 2
+  if len(a) % 2 != 0:
+    a_meio = a_meio + 1
+  if len(b) % 2 != 0:
+    b_meio = b_meio + 1
+  return a[:a_meio] + b[:b_meio] + a[a_meio:] + b[b_meio:]
 
 # J. zeros finais
 # Verifique quantos zeros há no final de um número inteiro positivo
 # Exemplo: 10010 tem 1 zero no fim e 908007000 possui três
 def zf(n):
-  return
+  num = str(n)[::-1]
+  i = 0
+  while num[i] == str(0):
+    i += 1
+  return i
 
 # K. conta 2
 # Verifique quantas vezes o dígito 2 aparece entre 0 e n-1
 # Exemplo: para n = 20 o dígito 2 aparece duas vezes entre 0 e 19
 def conta2(n):
-  return
+  i = 0
+  for j in range(n):
+    i += str(j).count('2')
+  return i
 
 # L. inicio em potencia de 2
 # Dado um número inteiro positivo n retorne a primeira potência de 2
 # que tenha o início igual a n
 # Exemplo: para n = 65 retornará 16 pois 2**16 = 65536
 def inip2(n):
-  return
+  strN = str(n)
+  i = 0
+  while True:
+    potencia = 2 ** i
+    if str(potencia).startswith(strN):
+      return i
+    i += 1
 
 def test(obtido, esperado):
   if obtido == esperado:
